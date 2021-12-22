@@ -5,13 +5,13 @@ import { logout } from '../../redux/actions/user';
 import ButtonItem from '../UI/buttons/ButtonItem';
 import {SERVER_URL} from '../../env.js';
 
-import "./navbar.scss";
+import "./sidebar.scss";
 import foodIco from '../../resources/icons/food.svg';
 import notesIco from '../../resources/icons/tasks.svg';
 import logoutIco from '../../resources/icons/logout.svg';
 import defaultAvatar from '../../resources/img/profile-img.png';
 
-function Navbar() {
+function Sidebar() {
     const dispatch = useDispatch();
     const user = useSelector(state => state.user.currentUser);
     const avatar = user.avatar ? `${SERVER_URL + user.avatar}` : defaultAvatar;
@@ -54,4 +54,4 @@ function Navbar() {
     );
 }
 
-export default Navbar;
+export default Sidebar;

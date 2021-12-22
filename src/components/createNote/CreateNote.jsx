@@ -91,6 +91,8 @@ function CreateNote() {
         changeStatusValue(e.target.value)
     }
 
+
+
     const changeStatusValue = (value) => {
         setStatusValue(value);
     }
