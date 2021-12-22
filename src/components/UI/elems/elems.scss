@@ -1,0 +1,59 @@
+@import '../../../styles//variables.scss';
+
+.plus-ico {
+    width: 53px;
+    height: 53px;
+    background-color: $sidebar-bg;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    &__img {
+        width: 33px;
+        height: 33px;
+    }
+}
+
+.nutrient {
+    display: flex;
+    padding-right: 30px;
+    align-items: center;
+    margin-bottom: 11px;
+
+    &__title,
+    &__text {
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 500;
+        margin-left: 6px;
+        color: $text;
+    }
+
+    &__color {
+        width: 10px;
+        height: 10px;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width: 592px) {
+    .plus-ico {
+        width: 35px;
+        height: 35px;
+        &__img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+}
+
+@media (max-width: 430px) {
+    .nutrient {
+        &__title {
+            font-size: 14px;
+            line-height: 18px;
+        }
+    }
+}

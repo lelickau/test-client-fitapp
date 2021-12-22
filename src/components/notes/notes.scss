@@ -1,0 +1,20 @@
+@import '../../styles//variables.scss';
+
+.notes {
+
+    &__title {
+        margin-top: 39px;
+        @extend %title-font;
+        margin-bottom: 46px;
+    }
+
+    &__box-items{
+        padding: 10px;
+    }
+
+    &__empty {
+        font-size: 14px;
+        font-weight: 200;
+        color: rgb(82, 82, 82);
+    }
+}

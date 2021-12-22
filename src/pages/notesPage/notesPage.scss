@@ -1,0 +1,78 @@
+@import '../../styles//variables.scss';
+body .notes__create-box .hidden {
+    overflow:hidden;
+}
+.notes {
+
+    &__create-box {
+        position: fixed;
+        z-index: 250;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(43, 42, 42, 0.281);
+        width: 100%;
+        height: 100%;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        border: none;
+        height: 53px;
+        background: #444C57;
+        border-radius: 26px;
+        cursor: pointer;
+    }
+
+    &__btn-ico {
+        width: 33px;
+        height: 33px;
+    }
+    &__btn-text {
+        color: $link-color;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        padding: 0 22px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+}
+
+@media (max-width: 1100px) {
+    .notes {
+        &__title {
+            margin-bottom: 15px;
+        }
+        .container {
+            padding-left: 115px;
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    .notes {
+        .container {
+            padding-left: 10px;
+        }
+        &__box-items {
+            padding: 0;
+            padding-right: 10px;
+        }
+    }
+}
+@media (max-width: 590px) {
+    .notes {
+        &__btn {
+            height: 40px;
+        }
+    }
+}

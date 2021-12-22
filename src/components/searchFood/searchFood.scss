@@ -1,0 +1,168 @@
+@import '../../styles/variables.scss';
+
+.search-food {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 21px rgba(51, 51, 51, 0.25);
+    border-radius: 17px;
+    width: 748px;
+    padding: 47px 57px;
+
+    &__title {
+        @extend %title-font;
+        width: 616px;
+        display: block;
+    }
+
+    &__input-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__btn-box {
+        margin-left: 14px;
+    }
+
+    &__choose-weight {
+        margin-top: 28px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__weight {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 103px;
+        height: 54.39px;
+        margin-left: 23px;
+        margin-right: 23px;
+        border-radius: 9px;
+        padding: 14px 10px;
+    }
+
+    &__weight-item {
+        cursor: pointer;
+        border: 1px solid #2C343F;
+        border-radius: 10px;
+        padding: 7px 20px;
+        font-weight: 500;
+        color: $text;
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    &__weight-item + .search-food__weight-item {
+        margin-left: 14px;
+    }
+
+    &__btn-ico {
+        display: none;
+    }
+}
+
+@media (max-width: 1420px) {
+    .search-food {
+        width: 696px;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 1360px) {
+    .search-food {
+        box-shadow: 0px 0px 4px rgba(51, 51, 51, 0.25);
+        width: 420px;
+
+        &__title {
+            width: 363px;
+            font-size: 18px;
+        }
+
+        &__btn-ico {
+            display: block;
+        }
+
+        &__btn-title {
+            display: none;
+        }
+
+        &__btn-box {
+            margin-left: -18px;
+        }
+
+        &__weight {
+            width: 85px;
+            height: 35px;
+            padding: 8px 5px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .search-food {
+        width: 550px;
+        &__title {
+            width: 490px;
+        }
+    }
+
+}
+
+@media (max-width: 840px) {
+    .search-food {
+        margin: 0 auto;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 570px) {
+    .search-food {
+        width: 400px;
+
+        &__title {
+            width: 340px;
+        }
+    }
+}
+@media (max-width: 430px) {
+    .search-food {
+        width: 340px;
+        padding: 20px;
+
+        &__title {
+            width: 300px;
+        }
+
+        &__weight-item {
+            font-size: 12px;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .search-food {
+        width: 307px;
+        padding: 19px 17px;
+        &__title {
+            width: 273px;
+        }
+
+        &__weight-item {
+            padding: 5px 13px;
+        }
+    }
+}
+@media (max-width: 320px) {
+    .search-food {
+        width: 260px;
+        &__title {
+            width: 226px;
+        }
+
+        &__weight-item {
+            padding: 5px 7px;
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@import '../../../styles//variables.scss';
+
+.main-btn{
+    width: 162px;
+    height: 52px;
+    background-color: $btn-color;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $link-color;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    cursor: pointer;
+
+    &:disabled {
+        background-color: rgb(124, 124, 124);
+        cursor: progress;
+    }
+}
+
+@media (max-width: 1360px) {
+    .main-btn {
+        width: auto;
+    }
+}
+
+@media (max-width: 592px) {
+    .main-btn {
+        padding: 5px 10px;
+        height: 39px;
+    }
+}

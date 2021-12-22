@@ -1,0 +1,25 @@
+$main-bg: #F7F7F7;
+$sidebar-bg: #2C343F;
+$title: #565656;
+$text: #7E7E7E;
+$input-text: #EDEDED;
+$btn-color: #444C57;
+$link-color: #fff;
+$head-bg: #212832;
+
+%title-font{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+    color: $title;
+}
+%iput-item{
+    width: 100%;
+    display: block;
+    margin-top: 15px;
+    height: 51px;
+    border: none;
+    padding: 0 30px 0 23px;
+    background-color: $input-text;
+    border-radius: 9px;
+}

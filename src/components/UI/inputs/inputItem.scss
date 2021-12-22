@@ -1,0 +1,23 @@
+@import '../../../styles//variables.scss';
+
+.main-input {
+    @extend %iput-item;
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 19px;
+        color: #909090;
+    }
+
+}
+
+@media (max-width: 592px) {
+    .main-input {
+        height: 39px;
+
+        &::placeholder {
+            font-size: 16px;
+        }
+    }
+
+}

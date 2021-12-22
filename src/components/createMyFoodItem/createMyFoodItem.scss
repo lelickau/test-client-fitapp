@@ -1,0 +1,113 @@
+@import '../../styles/variables.scss';
+
+.create-food {
+    width: 766px;
+    padding: 50px 70px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 21px rgba(51, 51, 51, 0.25);
+    border-radius: 17px;
+    overflow: auto;
+    height: 90vh;
+
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 34px;
+    }
+
+    &__data-box {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__cancel-btn {
+        color: #ff6949;
+        background-color: transparent;
+        border: none;
+        font-size: 18px;
+        line-height: 21px;
+        cursor: pointer;
+    }
+
+    &__label-item {
+        display: block;
+        width: 285px;
+        @extend %title-font;
+        margin-bottom: 32px;
+    }
+
+    &__point {
+        margin-right: 10px;
+        display: inline-block;
+        width: 14px;
+        height: 14px;
+        border-radius: 7px;
+    }
+
+    &__crabs {
+        background: #62CF58;
+    }
+    &__fat {
+        background: #6263D5;
+    }
+    &__protein {
+        background: #F1B04A;
+    }
+    &__energy {
+        background: #FFEE51;
+    }
+    &__fiber {
+        background: #996D2B;
+    }
+
+    &__error input {
+        background-color: rgb(255, 195, 195);
+    }
+
+    .error-message {
+        margin-bottom: -13px;
+        display: block;
+        font-size: 13px;
+        line-height: 13px;
+        font-weight: 500;
+        color: rgb(226, 77, 77);
+    }
+
+    .hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .create-food {
+        width: 650px;
+        &__label-item {
+            width: 240px;
+            font-size: 18px;
+            line-height: 22px;
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    .create-food {
+        border-radius: 0px;
+        width: 100vw;
+        height: 100vh;
+        padding: 35px;
+        padding-bottom: 70px;
+    }
+}
+
+@media (max-width: 560px) {
+    .create-food {
+        &__data-box {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__label-item {
+            width: 80vw;
+        }
+    }
+}
